@@ -1,0 +1,202 @@
+.name-title{
+    align-content: center;
+    text-align: center;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    background: -webkit-linear-gradient(90deg, rgb(77, 12, 241), rgb(212, 4, 150));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-div {
+    background-image: linear-gradient(rgb(74, 222, 255), rgb(255, 72, 185));
+    background-size: 600% 600%;
+     animation-name: example;
+     animation-duration: 15s; /* Duration of the animation (4 seconds in this case) */
+     animation-timing-function: steps(50); /* Timing function for the animation */
+     animation-iteration-count: infinite; /* Number of times the animation should repeat (infinite in this case) */
+     align-content: center;
+     text-align: center;
+     color: white;
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     margin-top: 4%;
+ }
+
+.about-p {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    height: 100%;
+}
+
+body {
+    margin: 0; /* Set margin to zero to remove default body margin */
+    height: 100%; /* Ensure body takes up full height of viewport */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 196, 47, 0.387);
+    color: #fff;
+    padding: 1%;
+    margin: 0; /* Ensure no margin */
+}
+
+.navbar .container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items to each end */
+    align-items: center; /* Center items vertically */
+}
+
+.logo {
+    color: #fff; /* Text color of the logo */
+    font-size: 1.5rem; /* Font size of the logo */
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: -webkit-linear-gradient(rgb(77, 12, 241), rgb(212, 4, 150));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links li a {
+    color: #fff; /* Text color of the navigation links */
+    text-decoration: none; /* Remove underline from the links */
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 95%; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Padding around the container */
+    padding-top: 0%; /* Add padding to the top of the container to prevent content from being hidden behind the fixed navbar */
+}
+
+.nav-links li {
+    display: inline-block; /* Display list items horizontally */
+    margin-left: 20px; /* Space between each list item */
+}
+
+.nav-icon{
+    width: 2.5%;
+}
+
+/* The animation code */
+@keyframes example {
+    0% {background-position: 50% 0%;}
+    50% {background-position:  50% 100%;}
+    100% {background-position:  50% 0%;}
+}
+ 
+.title-div {
+    background-image: linear-gradient(rgb(74, 222, 255), rgb(255, 72, 185));
+    background-size: 600% 600%;
+     animation-name: example;
+     animation-duration: 15s; /* Duration of the animation (4 seconds in this case) */
+     animation-timing-function: steps(50); /* Timing function for the animation */
+     animation-iteration-count: infinite; /* Number of times the animation should repeat (infinite in this case) */
+     align-content: center;
+     text-align: center;
+     color: white;
+     padding: 1%;
+     margin: 0%;
+     font-family: 'Roboto', sans-serif;
+     font-variant: small-caps;
+ }
+ 
+ * {
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+}
+
+.card-container {
+    padding-top: 1.5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgb(255, 134, 58), rgb(148, 255, 77));
+    margin-left: 0%;
+}
+
+.card {
+    display: flex;
+    width: 47%;
+    margin-bottom: 20px;
+    background-image: linear-gradient(rgba(74, 222, 255, 0.4), rgba(255, 72, 185, 0.4));
+    background-size: 600% 600%;
+    animation-name: example;
+    animation-duration: 15s; /* Duration of the animation (4 seconds in this case) */
+    animation-iteration-count: infinite; /* Number of times the animation should repeat (infinite in this case) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0%;
+}
+
+/* Adjustments to make the cards reach closer to the edge */
+.card-container {
+    margin: 0; /* Remove default margin */
+}
+
+.card {
+    margin-left: 0; /* Remove left margin */
+}
+
+
+.card img {
+    width: 50%; /* Adjust image width as needed */
+    height: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.card-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: "Anta", sans-serif;
+}
+
+.card-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-family: "Anta", sans-serif;
+}
+
+.read-more-btn {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}

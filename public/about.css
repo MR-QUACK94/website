@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #fullheight {
+    min-height: 100%;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 196, 47, 0.387);
+    color: #fff;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: -webkit-linear-gradient(rgb(77, 12, 241), rgb(212, 4, 150));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.nav-icon {
+    width: 2.5%;
+}
+
+.about-div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(rgb(74, 222, 255), rgb(255, 72, 185));
+    background-size: 600% 600%;
+    animation-name: example;
+    animation-duration: 15s;
+    animation-timing-function: steps(50);
+    animation-iteration-count: infinite;
+    color: white;
+    padding-top: 0%;
+    font-family: 'Roboto', sans-serif;
+    font-variant: small-caps;
+    height: 100%; /* Subtract the height of the navbar (adjust as needed) */
+    overflow-y: auto; /* Add scrollbar if content overflows */
+    font-size: 1.5rem;
+}
+
+@keyframes move-gradient {
+    0% {background-position: 50% 0%;}
+    50% {background-position:  50% 100%;}
+    100% {background-position:  50% 0%;}
+}
+
+.about-p{
+    background: -webkit-linear-gradient(rgb(77, 12, 241), rgb(212, 4, 150));
+    animation-name: move-gradient;
+    animation-duration: 15s; /* Duration of the animation (4 seconds in this case) */
+    animation-iteration-count: infinite; /* Number of times the animation should repeat (infinite in this case) */
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
